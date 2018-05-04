@@ -1,16 +1,22 @@
+<div class="carousel-title">
+  <img src="{{site.baseurl}}/static/assets/img/landing/ACMLogo.png">
+  <h1>ACM @ Purdue</h1>
+  <hr>
+  <h3>
+    A professional, collaborative environment focused on building
+    exceptional software and inspiring students to learn the skills
+    necessary for success in computing fields.
+  </h3>
+</div>
 <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#inSlider" data-slide-to="0" class="active"></li>
         <li data-target="#inSlider" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-
         <div class="item active">
             <div class="container">
-                <div class="carousel-caption">
-                </div>
                 <div class="carousel-image wow zoomIn">
-                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
                 </div>
             </div>
             <!-- Set background for slide in css -->
@@ -24,8 +30,6 @@
         {% for banner in site.data.index.banners offset:1 %}
         <div class="item">
             <div class="container">
-                <div class="carousel-caption">
-                </div>
                 <div class="carousel-image wow zoomIn">
                     <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
                 </div>
