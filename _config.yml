@@ -1,100 +1,70 @@
-# ----
-# Site
+# Welcome to Jekyll!
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+# Website settings
+title: Jalpc
+description: Jack's blog,use Jekyll and github pages.
+keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+baseurl:  /Jalpc # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: https://jarrekk.github.io/Jalpc  # url should be 'http://<github_username>.github.io/homepage' as before
+# url: http://127.0.0.1:4000
+img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: App marketing template for Jekyll.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Frisco Template
-  links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+# author -- index page "about me" section
+author:  # change following line to your infomation.
+  name: GitHub  # Be used at blog posts' author.
+  first_name: Hub  # Be used at index page about me section.
+  last_name: Git  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  github_username: jarrekk  # Leave blank if you don't have now
+  linkedin_id: jarrekk # Leave blank if you don't have now
+  facebook_username: jiakunnj  # Leave blank if you don't have now
+  twitter_username: jiakun614  # Leave blank if you don't have now
+  email: me@jarrekk.com  # Leave blank if you don't have now
+  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+    - name: icon-apache
+    - name: fa-linux
+  skill_icon2:
+    - name: fa-linux
+    - name: icon-apache
+  desc: Introduce myself will be here.  # Describe yourself.
 
-# -----
-# Build
+# comment
+disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  name: jalpc
 
-timezone: Etc/UTC
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-93473370-3
 
-permalink: pretty
+## google optimize
+go:
+  # id:
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-archives
+## growingIO
+gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+  # id:
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+## donation
+donation: on  # type 'on'/'off' to choice display donation button at post page or not
 
-collections:
-  staff_members:
-    _hide_content: true
+## carousels
+index_carousel: on  # index page carousel switch
+blog_carousel: on  # blog page carousel switch
 
-paginate: 10
-paginate_path: "/blog/:num/"
+# scss
+sass:
+  style: compressed
 
-jekyll-archives:
-  enabled: ['categories']
+# Build settings
+encoding: utf-8
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        image:
-          width: 2000
-          height: 1322
-          resize_style: cover
-        content:
-          width: 1500
-          height: 2000
-  -
-    scope:
-      path: "contact-success.html"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      image:
-        width: 2000
-        height: 1322
-        resize_style: cover
-      bottom_image:
-        width: 2000
-        height: 1322
-        resize_style: cover
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Email
-
-_comments:
-  description: Text shown when sharing on social media
-  blurb: Short bio or description of this person

@@ -1,6 +1,5 @@
 ---
-layout: null
-sitemap: false
+title: robots
 ---
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: <{{site.url}}/sitemap.xml>
