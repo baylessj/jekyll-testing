@@ -36,7 +36,18 @@
                     {% endif %}
                   {% endif %}
                   </h4>
+
                   <p><span data-i18n="sigs.{{ sig.i18n }}">{{ sig.desc }}</span></p>
+
+                  <h4>
+                  {% if sig.meeting-room %}
+                    {% if sig.meeting-day %}
+                      {% if sig.meeting-time %}
+                        Meetings in {{ sig.meeting-room }} every {{ sig.meeting-day}} at {{ sig.meeting-time }}.
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  </h4>
               </div>
           </div>
       {% endfor %}

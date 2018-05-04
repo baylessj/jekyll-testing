@@ -6,7 +6,10 @@
   img: /static/assets/img/landing/sigapp_logo.png
   president: Jean-Michael Diei
   email: jdiei@purdue.edu
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  desc: SIGAI is a group of people interested in discussing artificial intelligence and working on projects related to all aspects of artificial intelligence.
+  meeting-room: LWSN B158
+  meeting-day: Saturday
+  meeting-time: 2:00PM
 
 - name: SIGAPP
   i18n: sigapp
