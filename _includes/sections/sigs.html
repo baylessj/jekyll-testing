@@ -1,0 +1,44 @@
+<div class="container" id="i18_sigs">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="sigs.sigs">SIGs</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for sig in site.data.index.sigs %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if forloop.last %}
+                {% if forloop.last == forloop.first %}
+                  <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
+                {% else %}
+                  <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
+                {% endif %}
+            {% else %}
+            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+            {% endif %}
+              <div class="team-member">
+                  <img src="{{ sig.img | prepend: site.baseurl }}" class="img-responsive img-sig" alt="">
+                  <h2>
+                  {% if sig.url %}
+                  <a href="{{ sig.url }}" target="_blank"><span class="navy">{{ sig.name }}</span></a>
+                  {% else %}
+                  <span class="navy">{{ sig.name }}</span>
+                  {% endif %}
+                  </h2>
+
+                  <h4>
+                  {% if sig.president %}
+                    {% if sig.email %}
+                      President: <a href="mailto:{{ sig.email }}" target="_blank"><span class="navy">{{ sig.president }}</span></a>
+                    {% else %}
+                      <p>President: <span class="navy">{{ sig.president }}</span></p>
+                    {% endif %}
+                  {% endif %}
+                  </h4>
+                  <p><span data-i18n="sigs.{{ sig.i18n }}">{{ sig.desc }}</span></p>
+              </div>
+          </div>
+      {% endfor %}
+    </div>
+</div>
