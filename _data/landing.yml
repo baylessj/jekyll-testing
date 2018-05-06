@@ -12,6 +12,12 @@
   tpl: sigs.html
   css:
 
+- id: leadership
+  i18n: nav.leadership
+  name: Leadership
+  tpl: leadership.html
+  css:
+
 - id: projects
   i18n: nav.projects
   name: Projects
@@ -22,7 +28,7 @@
   i18n: nav.sponsors
   name: Sponsors
   tpl: sponsors.html
-  css: 
+  css:
 
 - id: blog
   i18n: nav.blog
