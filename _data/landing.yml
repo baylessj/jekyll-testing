@@ -10,7 +10,7 @@
   i18n: nav.about_us
   name: About
   tpl: about.html
-  css: about-us
+  css:
 
 - id: sigs
   i18n: nav.sigs
